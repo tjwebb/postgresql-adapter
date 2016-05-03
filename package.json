@@ -53,7 +53,7 @@
   ],
   "scripts": {
     "pretest": "gulp",
-    "test": "mocha && node test/integration/runner.js",
+    "test": "mocha test/unit && node test/integration/runner.js",
     "prepublish": "gulp"
   },
   "main": "dist/adapter",
