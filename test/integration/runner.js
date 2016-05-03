@@ -58,7 +58,7 @@ new TestRunner({
   // Mocha opts
   mocha: {
     bail: false,
-    grep: /(case in)|(case se)|(greaterThanOrEqual key when searching strings)|(>= usage when searching strings)/,
+    grep: /(case in)|(case se)|(greaterThanOrEqual key when searching strings)|(>= usage when searching strings)|(when searching dates as strings)/,
     invert: true
   },
 
