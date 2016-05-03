@@ -9,11 +9,11 @@ const Adapter = require('../../../dist/adapter')
 describe('wl edge cases', () => {
   const wlconfig = {
     adapters: {
-      edgetests: Adapter
+      wltests: Adapter
     },
     connections: {
-      edgetests: {
-        adapter: 'edgetests',
+      wltests: {
+        adapter: 'wltests',
         connection: {
 
         }
@@ -71,7 +71,7 @@ describe('wl edge cases', () => {
         noise: model.noise,
         description: model.description
       }
-      wl.connections.edgetests._adapter.create('edgetests', 'noisymodel', modelObject, (err, record) => {
+      wl.connections.wltests._adapter.create('wltests', 'noisymodel', modelObject, (err, record) => {
         assert.equal(record.identity, 'noisymodel')
         done()
       })

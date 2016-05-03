@@ -4,7 +4,7 @@ module.exports = {
 
   NormalModel: Waterline.Collection.extend({
     identity: 'normalmodel',
-    connection: 'edgetests',
+    connection: 'wltests',
     dynamicFinders: false,
     associationFinders: false,
 
@@ -15,7 +15,7 @@ module.exports = {
 
   NoisyModel: Waterline.Collection.extend({
     identity: 'noisymodel',
-    connection: 'edgetests',
+    connection: 'wltests',
     dynamicFinders: false,
     associationFinders: false,
 
